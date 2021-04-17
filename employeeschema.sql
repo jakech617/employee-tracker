@@ -3,7 +3,7 @@ drop database if exists employee_db;
 create database employee_db;
 
 create table department (
-	id int primary key,
+	id int primary key auto_increment, 
     name varchar(30)
 );
 
@@ -21,4 +21,3 @@ create table employee (
     role_id integer,
     manager_id integer
 );
-    
